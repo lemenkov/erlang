@@ -19,8 +19,8 @@
 ## Optional components
 ##
 
-%global __with_emacs 1
-%global __with_examples 1
+%global __with_emacs 0
+%global __with_examples 0
 %global __with_java 1
 %global __with_tcltk 1
 #
@@ -61,7 +61,7 @@
 # typer
 # wx
 #
-%global __with_wxwidgets 1
+%global __with_wxwidgets 0
 
 
 Name:		erlang
@@ -2326,6 +2326,9 @@ useradd -r -g epmd -d /dev/null -s /sbin/nologin \
 
 
 %changelog
+* Fri Jul 14 2017 Haïkel Guémar <hguemar@fedoraproject.org> - 19.3.6.1-2
+- Disabling wxwidgets, emacs, examples
+
 * Fri Jun 30 2017 Peter Lemenkov <lemenkov@gmail.com> - 19.3.6.1-1
 - Ver. 19.3.6.1
 
